@@ -1,14 +1,12 @@
 const originalString = 'hello';
 
-const reversedString = reverseString(originalString)
-console.log(reversedString)
-function reverseString (str){
-  let reversedString = '';
-  
-  for (let i=str.length-1; i>=0; i--){
-    reversedString += str[i];
+const reversedString = reverseString()
 
+function reverseString(str){
+  let reversed = '';
+
+  for(let i=str.length-1; i>=0; i--){
+    reversed += str[i];
   }
-  return reversedString
+  return reversed;
 }
-
